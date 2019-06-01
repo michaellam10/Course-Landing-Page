@@ -161,6 +161,9 @@ html {
   height: 100%;
   overflow-x: hidden;
   overflow: hidden; }
+  @media (max-width: 1200px) {
+    html {
+      overflow: auto; } }
 
 body {
   margin: 0;
@@ -221,13 +224,12 @@ main {
   box-shadow: 21px 21px 70px 0 rgba(11, 12, 31, 0.27);
   background-image: -webkit-radial-gradient(0 1%, circle, #3d3f65, #202135);
   background-image: -o-radial-gradient(0 1%, circle, #3d3f65, #202135);
-  background-image: radial-gradient(circle at 0 1%, #3d3f65, #202135);
-  overflow: hidden; }
+  background-image: radial-gradient(circle at 0 1%, #3d3f65, #202135); }
 
 .panel-content {
   margin-left: 10%;
   vertical-align: middle;
-  margin: 0px 0 0 10%; }
+  margin: 0 0 40px 10%; }
   .panel-content a.new-course {
     position: relative;
     font-size: 12px;

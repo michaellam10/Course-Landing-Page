@@ -35,13 +35,13 @@ main {
   background-color: $navy;
   box-shadow: 21px 21px 70px 0 rgba(11, 12, 31, 0.27);
   background-image: radial-gradient(circle at 0 1%, #3d3f65, #202135);
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .panel-content {
   margin-left: 10%;
   vertical-align: middle;
-  margin: 0px 0 0 10%;
+  margin: 0 0 40px 10%;
 
   a.new-course {
     position: relative;

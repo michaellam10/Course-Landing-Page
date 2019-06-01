@@ -668,6 +668,6 @@ main {
   .panel-art {
     display: none; } }
 
-@media screen and (max-height: 640px) {
+@media screen and (max-width: 599px) and (orientation: landscape) {
   .panel-art {
     display: none; } }

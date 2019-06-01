@@ -159,11 +159,12 @@ html {
 
 html {
   height: 100%;
+  width: 100%;
   overflow-x: hidden;
-  overflow: hidden; }
+  overflow-y: hidden; }
   @media (max-width: 1200px) {
     html {
-      overflow: auto; } }
+      overflow-y: auto; } }
 
 body {
   margin: 0;
@@ -224,7 +225,8 @@ main {
   box-shadow: 21px 21px 70px 0 rgba(11, 12, 31, 0.27);
   background-image: -webkit-radial-gradient(0 1%, circle, #3d3f65, #202135);
   background-image: -o-radial-gradient(0 1%, circle, #3d3f65, #202135);
-  background-image: radial-gradient(circle at 0 1%, #3d3f65, #202135); }
+  background-image: radial-gradient(circle at 0 1%, #3d3f65, #202135);
+  overflow: hidden; }
 
 .panel-content {
   margin-left: 10%;

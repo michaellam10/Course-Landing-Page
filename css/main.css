@@ -341,19 +341,15 @@ main {
     .panel .panel-content {
       margin-left: 50px;
       margin-right: 50px;
-      text-align: center; }
+      text-align: center;
+      width: 100%; }
       .panel .panel-content h1 {
         font-size: 2em; }
       .panel .panel-content p {
         font-size: 14px;
         line-height: 2; }
       .panel .panel-content #sign-up {
-        position: absolute;
-        bottom: 40px;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%); } }
+        margin-top: 35px; } }
 
 .navigation {
   display: -webkit-box;

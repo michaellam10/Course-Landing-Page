@@ -1,0 +1,127 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 82px;
+  box-sizing: border-box;
+
+  .logo {
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .nav-items {
+    text-align: right;
+    list-style-type: none;
+    margin-right: 10%;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 0;
+
+    & > li {
+      display: inline;
+
+      // adjust underbar for typographic spacing by the letter 'C'
+      &:nth-of-type(3), &:nth-of-type(4) {
+        .nav-link .underbar {
+            left: 4px;
+        }
+
+        .nav-link:hover .underbar {
+            width: calc(100% - 7px);
+        }
+      }
+    }
+
+    .nav-link {
+      position: relative;
+      display: inline-block;
+      padding: 2px;
+      margin: 5px 22px;
+      font-size: 14px;
+      letter-spacing: 0.7px;
+
+      &:hover .underbar {
+        width: calc(100% - 5px);
+        background: $light-blue;
+      }
+    }
+
+    .underbar{
+      width: 0;
+      height: 4px;
+      background: rgba(100,100,200,0);
+      position: absolute;
+      bottom: -10px;
+      transition: 0.5s ease;
+    }
+  }
+}
+
+.navigation {
+
+  @include for-size(tablet-landscape-down) {
+    padding-top: 45px;
+
+    .nav-items {
+      margin-right: 0;
+    }
+  }
+
+  @include for-size(tablet-portrait-down) {
+
+    align-items: flex-start;
+    z-index: 1;
+
+    .logo {
+      transform: scale(0.7);
+    }
+
+    .nav-items {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgba(40,40,62,1);
+      height: 100vh;
+      margin-top: 0;
+      padding: 120px 25px 120px 15px;
+      transform: translateX(100%);
+      transition: 0.2s ease;
+      text-align: left;
+      z-index: 3;
+
+      &.active {
+        transform: translateX(0);
+        transition: 0.3s ease;
+      }
+
+      & > li {
+        display: block;
+
+        .nav-link {
+
+          font-size: 16px;
+          font-weight: 500;
+
+          &:hover {
+            color: #aaaaaa;
+          }
+        }
+      }
+
+      & > li + li {
+        margin-top: 15px;
+      }
+
+      .underbar {
+        display: none;
+      }
+    }
+  }
+
+  @include for-size(phone-only) {
+    padding: 40px 40px;
+  }
+}

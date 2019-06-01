@@ -1,0 +1,93 @@
+@include for-size(tablet-landscape-down) {
+  // top: 50%;
+  // left: 50%;
+  // width: 80%;
+  // height: 80%;
+  // transform: translate(-50%,-50%);
+
+  .overlay {
+
+    &.background-overlay {
+      display: none;
+    }
+
+    &.panel-overlay {
+      top: 25%;
+      width: 120%;
+    }
+  }
+
+  .panel {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(0);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .navigation {
+      position: fixed;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .panel-content {
+      margin-left: 82px;
+      margin-top: -10%;
+    }
+  }
+}
+
+@include for-size(tablet-portrait-down) {
+  .overlay.panel-overlay {
+    top: 20%;
+    width: 150%;
+    left: -25%;
+  }
+
+  .panel {
+
+    .panel-content {
+      margin-left: 90px;
+    }
+  }
+}
+
+@include for-size(phone-only) {
+  .overlay.panel-overlay {
+    top: 0%;
+    left: -25%;
+    width: 170%;
+  }
+
+  .panel {
+    position: relative;
+
+    .panel-content {
+      margin-left: 50px;
+      margin-right: 50px;
+      text-align: center;
+
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 2;
+      }
+
+      #sign-up {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

@@ -667,3 +667,7 @@ main {
 @media (max-width: 599px) {
   .panel-art {
     display: none; } }
+
+@media screen and (max-height: 640px) {
+  .panel-art {
+    display: none; } }

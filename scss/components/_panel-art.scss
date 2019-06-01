@@ -158,7 +158,7 @@
     display: none;
   }
 
-  // @include for-size(tablet-portrait-down) {
-  //   display: none;
-  // }
+  @media screen and (max-height: 640px) {
+    display: none;
+  }
 }

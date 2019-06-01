@@ -254,7 +254,7 @@ main {
     letter-spacing: 1px;
     padding: 18px 40px;
     display: inline-block;
-    margin: 25px 0;
+    margin: 25px 0 0 0;
     border-radius: 24.5px;
     -webkit-box-shadow: 0 0 12px 0 rgba(228, 52, 79, 0.45);
     box-shadow: 0 0 12px 0 rgba(228, 52, 79, 0.45);
@@ -297,31 +297,11 @@ main {
     height: 100%;
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
-    transform: translate(0);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    transform: translate(0); }
     .panel .navigation {
-      position: fixed;
-      top: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      width: 100%;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box; }
+      margin-bottom: 50px; }
     .panel .panel-content {
-      margin-left: 82px;
-      margin-top: -10%; } }
+      margin-left: 82px; } }
 
 @media (max-width: 900px) {
   .overlay.panel-overlay {
@@ -339,10 +319,12 @@ main {
   .panel {
     position: relative; }
     .panel .panel-content {
-      margin-left: 50px;
-      margin-right: 50px;
+      padding: 0 50px 25px 50px;
+      margin-left: 0;
       text-align: center;
-      width: 100%; }
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
       .panel .panel-content h1 {
         font-size: 2em; }
       .panel .panel-content p {

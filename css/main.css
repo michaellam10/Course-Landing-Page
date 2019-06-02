@@ -324,14 +324,15 @@ main {
   .panel {
     position: relative; }
     .panel .panel-content {
-      padding: 0 50px 25px 50px;
+      padding: 0 40px 25px 40px;
       margin-left: 0;
       text-align: center;
       width: 100%;
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
       .panel .panel-content h1 {
-        font-size: 1.7em; }
+        font-size: 2em;
+        white-space: nowrap; }
       .panel .panel-content p {
         font-size: 14px;
         line-height: 2; }

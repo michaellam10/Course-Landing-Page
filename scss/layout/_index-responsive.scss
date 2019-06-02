@@ -56,14 +56,15 @@
     position: relative;
 
     .panel-content {
-      padding: 0 50px 25px 50px;
+      padding: 0 40px 25px 40px;
       margin-left: 0;
       text-align: center;
       width: 100%;
       box-sizing: border-box;
 
       h1 {
-        font-size: 1.7em;
+        font-size: 2em;
+        white-space: nowrap;
       }
 
       p {

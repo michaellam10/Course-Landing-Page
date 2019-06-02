@@ -15,7 +15,8 @@ main {
 
   &.panel-overlay {
     position: absolute;
-    top: 100px;
+    // top: 100px;
+    top: 175px; // adjusted for text horizontal alignment
     left: 0;
     height: 110%;
     width: 110%;
@@ -41,7 +42,8 @@ main {
 .panel-content {
   margin-left: 10%;
   vertical-align: middle;
-  margin: 0 0 40px 10%;
+  // margin: 0 0 40px 10%;
+  margin: 25px 0 40px 82px; // horizontal alignment with navigation
 
   a.new-course {
     position: relative;

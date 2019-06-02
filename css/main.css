@@ -306,7 +306,8 @@ main {
     .panel .navigation {
       margin-bottom: 50px; }
     .panel .panel-content {
-      margin-left: 82px; } }
+      margin-left: 82px;
+      padding-bottom: 40px; } }
 
 @media (max-width: 900px) {
   .overlay.panel-overlay {
